@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".sample">
+    <ImageView
+        android:id="@+id/option_menu"
+        app:srcCompat="@drawable/ic_menu_white_24dp"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/maps_live_toggle_btx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/option_menu">
+    <TextView
+                android:id="@+id/google_maps_select_btx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google Maps"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/option_menu"
+                android:background="#902196F3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live Video Feed"
+                android:padding="8dp"
+                android:background="@color/black_transparent"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/status_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_check_circle_green_24dp"
+        android:layout_toLeftOf="@id/settings_ic_btx"
+        android:layout_margin="16dp"/>
+    <ImageView
+        android:id="@+id/settings_ic_btx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@drawable/ic_settings_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"/>
+    <RelativeLayout
+        android:id="@+id/params_dialog"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/maps_live_toggle_btx"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black_transparent"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:id="@+id/flight_check_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Flight Checklist"
+            android:layout_margin="6dp"
+            android:textSize="12sp"/>
+        <dji.ux.internal.SwitchButton
+            android:id="@+id/flight_check_switch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/flight_check_txt"
+            android:layout_margin="6dp"
+            android:background="#00000000"/>
+        <TextView
+            android:id="@+id/para_txt"
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/flight_check_switch"
+            android:layout_margin="8dp"
+            android:text="Parameters"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/max_height_txt"
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max height"
+            android:layout_below="@id/para_txt"
+            android:textSize="12sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginStart="10sp" />
+        <TextView
+            android:id="@+id/max_height_val"
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/max_height_txt"
+            android:layout_below="@id/para_txt"
+            android:layout_marginLeft="20sp"
+            tools:text="2000.0 m"
+            android:textSize="12sp"
+            android:layout_marginStart="20sp" />
+        <TextView
+
+            android:id="@+id/max_speed_txt"
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/max_height_txt"
+            android:layout_margin="8dp"
+            android:text="Max Speed"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/max_speed_val"
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/max_speed_txt"
+            android:layout_below="@id/max_height_val"
+            android:layout_marginLeft="12sp"
+            android:layout_marginTop="8dp"
+            tools:text="120 km/hr"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/geofence_txt"
+            android:background="#00000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/max_speed_txt"
+            android:textSize="12sp"
+            android:text="Geofencing"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="#00000000"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@id/geofence_txt"
+            android:padding="8dp"
+            android:text="Payload Release"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
