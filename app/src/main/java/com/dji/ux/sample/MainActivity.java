@@ -21,6 +21,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.PopupMenu;
 import android.widget.TextView;
@@ -137,12 +138,21 @@ public class MainActivity extends Activity implements View.OnClickListener, Popu
     private static final int REQUEST_PERMISSION_CODE = 12345;
     private List<String> missingPermission = new ArrayList<>();
     private EditText bridgeModeEditText;
+    private Button primary_activity_btx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         isAppStarted = true;
+        primary_activity_btx = findViewById(R.id.primary_activity_btx);
+        primary_activity_btx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,sample.class);
+                startActivity(intent);
+            }
+        });
         findViewById(R.id.complete_ui_widgets).setOnClickListener(this);
         findViewById(R.id.bt_customized_ui_widgets).setOnClickListener(this);
         findViewById(R.id.bt_map_widget).setOnClickListener(this);
