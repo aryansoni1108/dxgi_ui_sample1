@@ -1,21 +1,21 @@
 <component name="libraryTable">
   <library name="Gradle: com.dji:dji-sdk:4.10@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/libs/adapter-rxjava2-2.2.0.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/libs/rxjava-computation-expressions-0.21.1.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/libs/retrofit-2.2.0.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/libs/converter-gson-2.2.0.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/libs/rxandroid-2.1.0.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/libs/dji-rxjava-2.0.0.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/libs/rxandroid-1.1.0.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/libs/dji-rxjava-1.1.3.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/libs/dji-reactive-streams-1.0.0.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/89eccc176648dedf0339446cead247ca/jars/libs/logging-interceptor-3.6.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/libs/dji-rxjava-2.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/libs/rxandroid-2.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/libs/adapter-rxjava2-2.2.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/libs/dji-reactive-streams-1.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/libs/retrofit-2.2.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/libs/dji-rxjava-1.1.3.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/libs/logging-interceptor-3.6.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/libs/converter-gson-2.2.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/libs/rxandroid-1.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/dji-sdk-4.10.aar/c5a9b75c9c06262add7df40b026efd07/jars/libs/rxjava-computation-expressions-0.21.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

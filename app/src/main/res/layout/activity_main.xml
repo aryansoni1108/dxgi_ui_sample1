@@ -1,81 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingEnd="60dp"
-    android:paddingStart="60dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <TableRow
-        android:paddingTop="40dp"
-        android:layout_weight="1"
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"/>
+        android:layout_height="60dp"
+        android:background="#2ABDFF"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/skyos_logo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_skyos"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="skyos Logo" />
 
-    <Button
-        android:id="@+id/complete_ui_widgets"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:layout_margin="10dp"
-        android:padding="14dp"
-        android:textColor="@color/background_blue"
-        android:text="Complete Demo of Default UI Widgets"/>
-    <Button
-        android:id="@+id/bt_customized_ui_widgets"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:layout_margin="10dp"
-        android:padding="14dp"
-        android:textColor="@color/background_blue"
-        android:text="Demo on Customized UI Widgets"/>
-    <Button
-        android:id="@+id/bt_map_widget"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:layout_margin="10dp"
-        android:padding="14dp"
-        android:textColor="@color/background_blue"
-        android:text="Map Widget Demo"/>
-    <Button
-        android:id="@+id/primary_activity_btx"
-        android:text="Primary Activity"
-        android:textColor="@color/black"/>
-
-    <TableRow
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"/>
-
-    <EditText
-        android:id="@+id/edittext_bridge_ip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@color/gray"
-        android:digits="0123456789.\n"
-        android:gravity="center"
-        android:hint="@string/wsbridge_ip"
-        android:imeOptions="actionDone"
-        android:maxLength="15"
-        android:maxLines="1"
-        android:padding="2dp"
-        android:textColor="@color/white"
-        android:textColorHint="@android:color/white"
-        android:textSize="15sp" />
-
-    <TextView
-        android:id="@+id/version"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:layout_margin="10dp"
-        android:textColor="@color/white"
-        android:gravity="center"
-        tools:text="Version"/>
+            <ImageView
+                android:id="@+id/toolbar_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_menu_white_24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/skyos_logo"
+                android:layout_centerVertical="true"
 
 
-</TableLayout>
+                android:textSize="24sp"
+                />
+            <LinearLayout
+                android:id="@+id/map_drone_toggle_linear_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Map View"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp" />
+                <dji.ux.internal.SwitchButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drone View"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/status_linear_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/map_drone_toggle_linear_lay"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/map_drone_toggle_linear_lay">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/ic_check_circle_green_24dp"
+                    android:layout_marginStart="6dp"
+                    android:contentDescription="Status"
+                    android:layout_marginLeft="6dp" />
+
+            </LinearLayout>
+            <dji.ux.widget.RemoteControlSignalWidget
+            android:id="@+id/remote_ctrl_sig_widget"
+            android:layout_width="38dp"
+            android:layout_height="22dp"
+            android:layout_toEndOf="@id/status_linear_lay"
+            android:layout_toRightOf="@id/status_linear_lay"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="#5C5C5C"/>
+            <dji.ux.widget.BatteryWidget
+                android:id="@+id/battery_indicator"
+                android:layout_width="46dp"
+                android:layout_height="22dp"
+
+                custom:excludeView="batteryIcon"
+                android:layout_toRightOf="@id/remote_ctrl_sig_widget"
+                android:layout_centerVertical="true"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_settings_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <dji.ux.widget.controls.CameraControlsWidget
+        android:layout_width="50dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toolbar"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"/>
+    <dji.ux.widget.dashboard.HorizontalVelocityWidget
+        android:layout_width="142dp"
+        android:layout_height="32dp"
+        android:background="#D82E2E2E"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="50dp"
+       android:layout_below="@id/distance_rc_widget"
+        android:layout_marginStart="50dp" />
+    <dji.ux.widget.dashboard.DistanceRCWidget
+        android:id="@+id/distance_rc_widget"
+        android:layout_width="142dp"
+        android:layout_height="32dp"
+        android:background="#D82E2E2E"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="50dp" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ctrlbtx"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

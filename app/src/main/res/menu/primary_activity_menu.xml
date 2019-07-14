@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/automated_menu_item"
-        android:title="Automated"/>
+        android:id="@+id/system1_menu_item"
+        android:title="System 1">
+        <menu>
+            <item
+                android:id="@+id/system1_save_menu_item"
+                android:title="Save Mission"
+                />
+            <item
+                android:id="@+id/system1_create_menu_item"
+                android:title="Create Mission"
+                />
+        </menu>
+    </item>
+
     <item
-        android:id="@+id/manual_menu_item"
-        android:title="Manual"/>
+        android:id="@+id/system2_menu_item"
+        android:title="System 2">
+        <menu>
+            <item
+                android:id="@+id/system2_save_menu_item"
+                android:title="Save Mission"
+                />
+            <item
+                android:id="@+id/system2_create_menu_item"
+                android:title="Create Mission"
+                />
+        </menu>
+    </item>
     <item
-        android:id="@+id/extensions_menu_item"
-        android:title="Extensions"/>
+        android:id="@+id/system3_menu_item"
+        android:title="System 3">
+        <menu>
+            <item
+                android:id="@+id/system3_save_menu_item"
+                android:title="Save Mission"
+                />
+            <item
+                android:id="@+id/system3_create_menu_item"
+                android:title="Create Mission"
+                />
+        </menu>
+    </item>
 
 
 </menu>

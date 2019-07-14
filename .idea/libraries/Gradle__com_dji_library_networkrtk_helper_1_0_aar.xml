@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.dji:library-networkrtk-helper:1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-networkrtk-helper-1.0.aar/a23afa48739d56f5ae121db2784e85e8/jars/libs/wz-rtcm-1.1.3-release.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-networkrtk-helper-1.0.aar/a23afa48739d56f5ae121db2784e85e8/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-networkrtk-helper-1.0.aar/a23afa48739d56f5ae121db2784e85e8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-networkrtk-helper-1.0.aar/23b016665967dc1abf05926994632f94/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-networkrtk-helper-1.0.aar/23b016665967dc1abf05926994632f94/jars/libs/wz-rtcm-1.1.3-release.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-networkrtk-helper-1.0.aar/23b016665967dc1abf05926994632f94/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
