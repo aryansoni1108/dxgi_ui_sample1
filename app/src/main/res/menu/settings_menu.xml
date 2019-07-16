@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/checklist_item"
+        android:title="Checklist"
+        />
+    <item
+        android:id="@+id/cam_setting_item"
+        android:title="Camera Settings"
+        />
+    <item
+        android:id="@+id/monitor_item"
+        android:title="Monitor"
+        />
+    <item
+        android:id="@+id/send_reports_item"
+        android:title="Send Reports"
+        />
+</menu>

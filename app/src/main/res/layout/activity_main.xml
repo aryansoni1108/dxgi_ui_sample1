@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#333333">
 
 
     <android.support.v7.widget.Toolbar
@@ -106,6 +107,7 @@
                 android:layout_centerVertical="true"
                 />
             <ImageView
+                android:id="@+id/settings_img_btx"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 app:srcCompat="@drawable/ic_settings_black_24dp"
@@ -126,29 +128,41 @@
         android:layout_below="@id/toolbar"
         android:layout_centerVertical="true"
         android:layout_marginTop="20dp"/>
-    <dji.ux.widget.dashboard.HorizontalVelocityWidget
-        android:layout_width="142dp"
-        android:layout_height="32dp"
-        android:background="#D82E2E2E"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="50dp"
-       android:layout_below="@id/distance_rc_widget"
-        android:layout_marginStart="50dp" />
-    <dji.ux.widget.dashboard.DistanceRCWidget
-        android:id="@+id/distance_rc_widget"
-        android:layout_width="142dp"
-        android:layout_height="32dp"
-        android:background="#D82E2E2E"
-        android:layout_below="@id/toolbar"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginStart="50dp" />
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/ctrlbtx"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+    <!--<dji.ux.widget.dashboard.HorizontalVelocityWidget-->
+        <!--android:layout_width="142dp"-->
+        <!--android:layout_height="32dp"-->
+        <!--android:background="#D82E2E2E"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+       <!--android:layout_below="@id/distance_rc_widget"-->
+        <!--android:layout_marginStart="50dp" />-->
+    <!---->
+    <!--<dji.ux.widget.dashboard.DistanceRCWidget-->
+        <!--android:id="@+id/distance_rc_widget"-->
+        <!--android:layout_width="142dp"-->
+        <!--android:layout_height="32dp"-->
+        <!--android:background="#D82E2E2E"-->
+        <!--android:layout_below="@id/toolbar"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:layout_marginStart="50dp" />-->
+    <LinearLayout
+        android:id="@+id/dashboard_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <dji.ux.widget.dashboard.DashboardWidget
+            android:layout_width="405dp"
+            android:layout_height="91dp"/>
+        <ImageView
+            android:id="@+id/ctrl_btx"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ctrlbtx"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
 
 
 

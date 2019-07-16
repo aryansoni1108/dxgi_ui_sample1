@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+        android:id="@+id/rth_rtm_menu_item"
+        android:title="RTH/RTM"
+        >
+        <menu>
+        <item
+            android:id="@+id/rth_menu_item"
+            android:title="RTH"/>
+        <item
+            android:id="@+id/rtm_menu_item"
+            android:title="RTM"/>
+        </menu>
+
+        </item>
+
+        <item
+            android:id="@+id/pause_continue_mission_id"
+            android:title="PAUSE/Continue MISSION">
+            <menu>
+                <item
+                    android:id="@+id/pause_menu_item"
+                    android:title="Pause">
+
+                </item>
+                <item
+                    android:id="@+id/continue_menu_item"
+                    android:title="Continue">
+
+                </item>
+            </menu>
+
+        </item>
+        <item
+            android:id="@+id/manual_ctrl_menu_item"
+            android:title="Manual Control">
+            <menu>
+                <item
+                    android:id="@+id/automated_menu_item"
+                    android:title="Automated"/>
+                <item
+                    android:id="@+id/onscreen_menu_item"
+                    android:title="On-Screen Controls"/>
+            </menu>
+
+        </item>
+        <item
+            android:id="@+id/extensions_menu_item"
+            android:title="EXTENSIONS"
+            >
+            <menu>
+                <item
+                    android:id="@+id/gimbal_ctrl_menu_item"
+                    android:title="Gimbal Control"/>
+                <item
+                    android:id="@+id/payload_ctrl_menu_item"
+                    android:title="Payload Control"/>
+            </menu>
+
+        </item>
+</menu>
