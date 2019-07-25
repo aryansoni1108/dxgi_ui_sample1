@@ -1,14 +1,14 @@
 package com.dji.ux.sample;
-import android.media.Image;
-import android.os.Bundle;
-import dji.ux.widget.BatteryWidget;
 
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.Toast;
+
+import dji.ux.widget.BatteryWidget;
 
 public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
     BatteryWidget batteryWidget;
@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        batteryWidget = findViewById(R.id.battery_indicator);
-        batteryWidget.initKey();
+        batteryWidget=findViewById(R.id.battery_widget);
+        batteryWidget.bringToFront();
         settings_btx=findViewById(R.id.settings_img_btx);
         ctrl_btx=findViewById(R.id.ctrl_btx);
         ctrl_btx.setOnClickListener(new View.OnClickListener() {
